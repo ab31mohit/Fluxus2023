@@ -1,0 +1,77 @@
+<mujoco>
+	<compiler autolimits="true" eulerseq="XYZ"/>
+
+	<worldbody>
+		
+        <light diffuse=".5 .5 .5" pos="0 0 3" dir="0 0 -2"/>
+		<geom type="plane" size="2 2 0.1" rgba=".9 0 0 1"/>
+		<body pos="0.05 0 0.005" euler = "0 90 0">
+			<inertial diaginertia="1 1 1" mass=".1" pos="0 0 0"></inertial>
+			<joint name="1" type="hinge" pos="0 0 -0.05" axis="-1 0 0" limited= "true" range= "-90 90"/>
+			<geom type="cylinder" size="0.005 0.05 " rgba="0 0 0 1" />
+			<body pos="0 0 0.1" euler = "0 0 0">
+				<inertial diaginertia="1 1 1" mass=".1"  pos="0 0 0"></inertial>
+				<joint name="2" type="hinge" pos="0 0 -.05" axis="0 -1 0" limited= "true" range= "-90 90"/>
+				<geom type="cylinder" size=".005 .05 " rgba="1 1 1 1" />
+				<body pos="0 0 0.1" euler = "0 0 0">
+					<joint name="3" type="hinge" pos="0 0 -.05" axis="-1 0 0" limited= "true" range= "-90 90"/>
+					<geom type="cylinder" size=".005 .05 " rgba="0 0 0 1" />
+					<body pos="0 0 0.1" euler = "0 0 0">
+						<joint name="4" type="hinge" pos="0 0 -.05" axis="0 -1 0" limited= "true" range= "-90 90"/>
+						<geom type="cylinder" size=".005 .05 " rgba="1 1 1 1" />
+						<body pos="0 0 0.1" euler = "0 0 0">
+							<joint name="5" type="hinge" pos="0 0 -.05" axis="-1 0 0" limited= "true" range= "-90 90"/>
+							<geom type="cylinder" size=".005 .05 " rgba="0 0 0 1" />
+							<body pos="0 0 0.1" euler = "0 0 0">
+								<joint name="6" type="hinge" pos="0 0 -.05" axis="0 -1 0" limited= "true" range= "-90 90"/>
+								<geom type="cylinder" size=".005 .05 " rgba="1 1 1 1" />
+								<body pos="0 0 0.1" euler = "0 0 0">
+									<joint name="7" type="hinge" pos="0 0 -.05" axis="-1 0 0" limited= "true" range= "-90 90"/>
+									<geom type="cylinder" size=".005 .05 " rgba="0 0 0 1" />
+									<body pos="0 0 0.1" euler = "0 0 0">
+										<joint name="8" type="hinge" pos="0 0 -.05" axis="0 -1 0" limited= "true" range= "-90 90"/>
+										<geom type="cylinder" size=".005 .05 " rgba="1 1 1 1" />
+										<site name="tip" size="0.01" pos="0 0 0.05"/>
+									</body>
+								</body>
+							</body>
+						</body>
+					</body>
+				</body>
+			</body> 
+		</body>
+	</worldbody>
+	<actuator>
+			<motor joint="1" name="t1" gear="1" ctrllimited="true" ctrlrange="-10 10"/>
+			<motor joint="2" name="t2" gear="1" ctrllimited="true" ctrlrange="-10 10"/>
+			<motor joint="3" name="t3" gear="1" ctrllimited="true" ctrlrange="-10 10"/>
+			<motor joint="4" name="t4" gear="1" ctrllimited="true" ctrlrange="-10 10"/>
+			<motor joint="5" name="t5" gear="1" ctrllimited="true" ctrlrange="-10 10"/>
+			<motor joint="6" name="t6" gear="1" ctrllimited="true" ctrlrange="-10 10"/>
+			<motor joint="7" name="t7" gear="1" ctrllimited="true" ctrlrange="-10 10"/>
+			<motor joint="8" name="t8" gear="1" ctrllimited="true" ctrlrange="-10 10"/>
+			<!-- <position name="pos1" joint="1" kp="10"/>
+			<position name="pos2" joint="2" kp="10"/> -->
+			<!-- <position name="pos3" joint="3" kp="10"/>
+			<position name="pos4" joint="4" kp="10"/>
+			<position name="pos5" joint="5" kp="10"/>
+			<position name="pos6" joint="6" kp="10"/>
+			<position name="pos7" joint="7" kp="10"/>
+			<position name="pos8" joint="8" kp="10"/>
+			<velocity name="vel1" joint="1" kv="5"/>
+			<velocity name="vel2" joint="2" kv="5"/>
+			<velocity name="vel3" joint="3" kv="5"/>
+			<velocity name="vel4" joint="4" kv="5"/>
+			<velocity name="vel5" joint="5" kv="5"/>
+			<velocity name="vel6" joint="6" kv="5"/>
+			<velocity name="vel7" joint="7" kv="5"/>
+			<velocity name="vel8" joint="8" kv="5"/> -->
+	</actuator> 
+	<!-- <sensor>
+     <framepos objtype="site" objname="tip"/>
+   </sensor> -->
+</mujoco>
+
+
+
+<!-- sensor/ jointlimitfrc (*) -->
