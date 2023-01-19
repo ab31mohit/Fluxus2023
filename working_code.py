@@ -2,10 +2,8 @@
 import mujoco as mj
 from mujoco.glfw import glfw
 import numpy as np
-from matplotlib import pyplot as plt
 import os
 import csv
-# from ik_functions import *
 import time
 
 ########################################################################
