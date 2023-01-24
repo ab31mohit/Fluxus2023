@@ -1,6 +1,6 @@
 <mujoco>
 	<compiler autolimits="true" eulerseq="XYZ"/>
-
+	
 	<worldbody>
 		
         <light diffuse=".5 .5 .5" pos="0 0 3" dir="0 0 -2"/>
@@ -8,7 +8,7 @@
 		<body pos="0.05 0 0.005" euler = "0 90 0">
 			<inertial diaginertia="1 1 1" mass=".1" pos="0 0 0"></inertial>
 			<joint name="1" type="hinge" pos="0 0 -0.05" axis="-1 0 0" limited= "true" range= "-90 90"/>
-			<geom type="cylinder" size="0.005 0.05 " rgba="0 0 0 1" />
+			<geom type="cylinder" size="0.005 0.05" rgba="0 0 0 1" />
 			<body pos="0 0 0.1" euler = "0 0 0">
 				<inertial diaginertia="1 1 1" mass=".1"  pos="0 0 0"></inertial>
 				<joint name="2" type="hinge" pos="0 0 -.05" axis="0 -1 0" limited= "true" range= "-90 90"/>
