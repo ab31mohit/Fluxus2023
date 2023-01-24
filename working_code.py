@@ -4,10 +4,7 @@ from mujoco.glfw import glfw
 import numpy as np
 import os
 import csv
-<<<<<<< HEAD
 import pandas as pd
-=======
->>>>>>> 50dd2504ae5e4a4560882f3d21e924ab46faa789
 import time
 
 ########################################################################
