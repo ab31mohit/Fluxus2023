@@ -24,8 +24,8 @@
         ```
    
   5. Mujoco - Physics simulating engine.    
-    - Download Mujoco 2.3.1 from [here](https://github.com/deepmind/mujoco/releases/download/2.3.6/mujoco-2.3.6-linux-x86_64.tar.gz)    
-    - Extract the zip file and copy the mujoco2.3.6 folder to home directory.
+    - Download Mujoco 2.3.6 from [here](https://github.com/deepmind/mujoco/releases/download/2.3.6/mujoco-2.3.6-linux-x86_64.tar.gz)    
+    - Extract the zip file and copy the mujoco-2.3.6 folder to home directory.
   
     - Open terminal and type the following command to install `libglfw` package.  
     
@@ -44,7 +44,7 @@
       ```
 
       and the press `ctrl + L` and write `/usr/lib` in the address bar and press enter.    
-    - Now paste the files your copied from `lib` to current (/usr/lib) folder. 
+    - Now copy the contents inside `mujoco-2.3.6/lib` folder and paste them to current(/usr/lib) folder. 
 ---
 
 - ## Running the simulation :
