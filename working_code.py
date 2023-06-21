@@ -102,7 +102,7 @@ def scroll(window, xoffset, yoffset):
 
 
 #get the full path
-dirname = os.path.dirname(__file__)
+dirname = os.getcwd()
 abspath = os.path.join(dirname + "/" + xml_path)
 xml_path = abspath
 

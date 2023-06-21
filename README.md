@@ -6,8 +6,8 @@
 ![Fluxus-10.0-IIT-Indore](/images/model.png)
 
 - ## Requirements/Installations :    
-  1. Ubuntu 20.04 Desktop LTS.
-  2. Python3 (3.5+).
+  1. Ubuntu 20.04 LTS Desktop version.
+  2. Python3 (3.7+).
   3. git. If not installed, type following commands on terminal   
         ``` 
         sudo apt-get update
@@ -24,22 +24,35 @@
         ```
    
   5. Mujoco - Physics simulating engine.    
-    - Download Mujoco 2.3.1 from [here](https://github.com/deepmind/mujoco/releases/download/2.3.1/mujoco-2.3.1-linux-x86_64.tar.gz)    
-    - open terminal and type the following command to install *libglfw* package.    
+    - Download Mujoco 2.3.1 from [here](https://github.com/deepmind/mujoco/releases/download/2.3.6/mujoco-2.3.6-linux-x86_64.tar.gz)    
+    - Extract the zip file and copy the mujoco2.3.6 folder to home directory.
+  
+    - Open terminal and type the following command to install `libglfw` package.  
+    
         ``` 
         sudo apt install libglfw3-dev
         ```   
-    - navigate to *sample* directory in *mujoco-2.3.1* in terminal and run :  
+    - Navigate to `sample` directory inside `mujoco-2.3.6` in terminal and type :
+  
         ```
         make
         ```
+    - Open terminal and type : 
+       
+      ```
+      sudo -H nautilus
+      ```
+
+      and the press `ctrl + L` and write `/usr/lib` in the address bar and press enter.    
+    - Now paste the files your copied from `lib` to current (/usr/lib) folder. 
 ---
 
 - ## Running the simulation :
   
 ![Fluxus-10.0-IIT-Indore](/images/model_code.png)    
 
-  1. Clone this repo in *mujoco-2.3.1* directory : 
+  1. Clone this repo in *mujoco-2.3.6* directory : 
+   
         ```
         git clone https://github.com/ab31mohit/Fluxus-10.0-IIT-Indore.git 
         ``` 
